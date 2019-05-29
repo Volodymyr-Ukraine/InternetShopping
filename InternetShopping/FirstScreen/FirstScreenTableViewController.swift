@@ -38,8 +38,8 @@ class FirstScreenTableViewController: RootTableViewControler {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as? FirstScreenTableViewCell {
-        cell.textLabel?.text = data.namesOfstrings[indexPath.item]
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? FirstScreenTableViewCell {
+            cell.CategoryLabel.text = data.namesOfstrings[indexPath.item]
             return cell}
         else {
             return UITableViewCell()
