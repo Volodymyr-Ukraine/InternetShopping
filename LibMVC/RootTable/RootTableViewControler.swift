@@ -24,12 +24,12 @@ public class RootTableViewControler: UITableViewController {
     
     override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        rootInit()
+        self.rootInit()
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        rootInit()
+        self.rootInit()
     }
     
     // MARK: -

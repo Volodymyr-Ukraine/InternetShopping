@@ -34,6 +34,11 @@
 		F51820F5229E7D190084B8BE /* FirstScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51820F4229E7D190084B8BE /* FirstScreenModel.swift */; };
 		F51820F7229E7DCE0084B8BE /* FirstScreensTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51820F6229E7DCE0084B8BE /* FirstScreensTextFields.swift */; };
 		F51820FA229E84870084B8BE /* FirstScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51820F9229E84870084B8BE /* FirstScreenTableViewCell.swift */; };
+		F51820FE229EEB4E0084B8BE /* RootCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51820FD229EEB4E0084B8BE /* RootCollectionViewController.swift */; };
+		F5182100229EEDE40084B8BE /* SecondScreenCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51820FF229EEDE40084B8BE /* SecondScreenCollectionViewController.swift */; };
+		F5182102229EF0740084B8BE /* SeconScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5182101229EF0740084B8BE /* SeconScreenStoryboard.storyboard */; };
+		F5182104229EF0FE0084B8BE /* RootCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5182103229EF0FE0084B8BE /* RootCollectionViewCell.swift */; };
+		F5182106229EF1D60084B8BE /* SecondScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5182105229EF1D60084B8BE /* SecondScreenCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +93,11 @@
 		F51820F4229E7D190084B8BE /* FirstScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenModel.swift; sourceTree = "<group>"; };
 		F51820F6229E7DCE0084B8BE /* FirstScreensTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreensTextFields.swift; sourceTree = "<group>"; };
 		F51820F9229E84870084B8BE /* FirstScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenTableViewCell.swift; sourceTree = "<group>"; };
+		F51820FD229EEB4E0084B8BE /* RootCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCollectionViewController.swift; sourceTree = "<group>"; };
+		F51820FF229EEDE40084B8BE /* SecondScreenCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenCollectionViewController.swift; sourceTree = "<group>"; };
+		F5182101229EF0740084B8BE /* SeconScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SeconScreenStoryboard.storyboard; sourceTree = "<group>"; };
+		F5182103229EF0FE0084B8BE /* RootCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5182105229EF1D60084B8BE /* SecondScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,7 @@
 				F51820EA229E76D60084B8BE /* New Group */,
 				F51820A0229A93830084B8BE /* AppDelegate.swift */,
 				F51820A2229A93830084B8BE /* ViewController.swift */,
+				F51820FB229EE3670084B8BE /* SecondScreen */,
 				F51820F8229E84530084B8BE /* FirstScreen */,
 				F51820A4229A93830084B8BE /* Main.storyboard */,
 				F51820AA229A93860084B8BE /* Assets.xcassets */,
@@ -146,6 +157,7 @@
 		F51820BB229AA97C0084B8BE /* LibMVC */ = {
 			isa = PBXGroup;
 			children = (
+				F51820FC229EE3D00084B8BE /* RootCollection */,
 				F51820EB229E79490084B8BE /* RootTable */,
 				F51820BC229AA97C0084B8BE /* LibMVC.h */,
 				F51820BD229AA97C0084B8BE /* Info.plist */,
@@ -220,6 +232,26 @@
 				F51820F9229E84870084B8BE /* FirstScreenTableViewCell.swift */,
 			);
 			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		F51820FB229EE3670084B8BE /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F51820FF229EEDE40084B8BE /* SecondScreenCollectionViewController.swift */,
+				F5182105229EF1D60084B8BE /* SecondScreenCollectionViewCell.swift */,
+				F5182101229EF0740084B8BE /* SeconScreenStoryboard.storyboard */,
+			);
+			name = SecondScreen;
+			path = FirstScreen/SecondScreen;
+			sourceTree = "<group>";
+		};
+		F51820FC229EE3D00084B8BE /* RootCollection */ = {
+			isa = PBXGroup;
+			children = (
+				F51820FD229EEB4E0084B8BE /* RootCollectionViewController.swift */,
+				F5182103229EF0FE0084B8BE /* RootCollectionViewCell.swift */,
+			);
+			path = RootCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5182102229EF0740084B8BE /* SeconScreenStoryboard.storyboard in Resources */,
 				F51820AE229A93860084B8BE /* LaunchScreen.storyboard in Resources */,
 				F51820AB229A93860084B8BE /* Assets.xcassets in Resources */,
 				F51820A6229A93830084B8BE /* Main.storyboard in Resources */,
@@ -340,11 +373,13 @@
 				F51820F5229E7D190084B8BE /* FirstScreenModel.swift in Sources */,
 				F51820A3229A93830084B8BE /* ViewController.swift in Sources */,
 				F51820F3229E7AE20084B8BE /* FirstScreenTableViewController.swift in Sources */,
+				F5182100229EEDE40084B8BE /* SecondScreenCollectionViewController.swift in Sources */,
 				F51820F0229E7A990084B8BE /* RootTableView.swift in Sources */,
 				F51820FA229E84870084B8BE /* FirstScreenTableViewCell.swift in Sources */,
 				F51820A9229A93830084B8BE /* InternetShopping.xcdatamodeld in Sources */,
 				F51820F7229E7DCE0084B8BE /* FirstScreensTextFields.swift in Sources */,
 				F51820A1229A93830084B8BE /* AppDelegate.swift in Sources */,
+				F5182106229EF1D60084B8BE /* SecondScreenCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +394,10 @@
 				F51820D2229ACFEE0084B8BE /* Cast.swift in Sources */,
 				F51820DB229AF79E0084B8BE /* RootAssembly.swift in Sources */,
 				F51820CC229AA9CC0084B8BE /* RootViewController.swift in Sources */,
+				F51820FE229EEB4E0084B8BE /* RootCollectionViewController.swift in Sources */,
 				F51820D9229AF10D0084B8BE /* ViewConvertible.swift in Sources */,
 				F51820D6229AD0880084B8BE /* Setup.swift in Sources */,
+				F5182104229EF0FE0084B8BE /* RootCollectionViewCell.swift in Sources */,
 				F51820EF229E7A070084B8BE /* RootTableView.swift in Sources */,
 				F51820CF229AAA4B0084B8BE /* Optionals.swift in Sources */,
 				F51820DD229AF81D0084B8BE /* RootViewGetable.swift in Sources */,
