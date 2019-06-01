@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1735B5E54280856118C00857 /* Pods_InternetShopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39FF16CDBEE627B01C22410 /* Pods_InternetShopping.framework */; };
+		AD6E13EF00A4BA381F708F65 /* Pods_LibMVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271E8FE4D2C2E5B08A50C67F /* Pods_LibMVC.framework */; };
 		F51820A1229A93830084B8BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51820A0229A93830084B8BE /* AppDelegate.swift */; };
 		F51820A3229A93830084B8BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51820A2229A93830084B8BE /* ViewController.swift */; };
 		F51820A6229A93830084B8BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51820A4229A93830084B8BE /* Main.storyboard */; };
@@ -39,6 +41,16 @@
 		F5182102229EF0740084B8BE /* SeconScreenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5182101229EF0740084B8BE /* SeconScreenStoryboard.storyboard */; };
 		F5182104229EF0FE0084B8BE /* RootCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5182103229EF0FE0084B8BE /* RootCollectionViewCell.swift */; };
 		F5182106229EF1D60084B8BE /* SecondScreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5182105229EF1D60084B8BE /* SecondScreenCollectionViewCell.swift */; };
+		F5206ADE22A27C0200FA3E6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F5206ADD22A27C0100FA3E6E /* Podfile */; };
+		F5206ADF22A27C0200FA3E6E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F5206ADD22A27C0100FA3E6E /* Podfile */; };
+		F5206AEE22A2B4BE00FA3E6E /* LibStyles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5206AE522A2B4BE00FA3E6E /* LibStyles.framework */; };
+		F5206AF522A2B4BE00FA3E6E /* LibStylesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206AF422A2B4BE00FA3E6E /* LibStylesTests.swift */; };
+		F5206AF722A2B4BE00FA3E6E /* LibStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = F5206AE722A2B4BE00FA3E6E /* LibStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5206AFA22A2B4BE00FA3E6E /* LibStyles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5206AE522A2B4BE00FA3E6E /* LibStyles.framework */; };
+		F5206AFB22A2B4BE00FA3E6E /* LibStyles.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5206AE522A2B4BE00FA3E6E /* LibStyles.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F5206B0322A2B52F00FA3E6E /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0222A2B52F00FA3E6E /* Style.swift */; };
+		F5206B0622A2B6FD00FA3E6E /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0522A2B6FD00FA3E6E /* LabelStyles.swift */; };
+		F5206B0822A2B95D00FA3E6E /* TextFieldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0722A2B95D00FA3E6E /* TextFieldStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,27 @@
 			remoteGlobalIDString = F51820B9229AA97B0084B8BE;
 			remoteInfo = LibMVC;
 		};
+		F5206AEF22A2B4BE00FA3E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5182095229A93830084B8BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5206AE422A2B4BE00FA3E6E;
+			remoteInfo = LibStyles;
+		};
+		F5206AF122A2B4BE00FA3E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5182095229A93830084B8BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F518209C229A93830084B8BE;
+			remoteInfo = InternetShopping;
+		};
+		F5206AF822A2B4BE00FA3E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5182095229A93830084B8BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5206AE422A2B4BE00FA3E6E;
+			remoteInfo = LibStyles;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +91,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F5206AFB22A2B4BE00FA3E6E /* LibStyles.framework in Embed Frameworks */,
 				F51820C2229AA97C0084B8BE /* LibMVC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -66,6 +100,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		271E8FE4D2C2E5B08A50C67F /* Pods_LibMVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibMVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D60D0DFBF3F5BE4849FACA /* Pods-LibMVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibMVC.release.xcconfig"; path = "Target Support Files/Pods-LibMVC/Pods-LibMVC.release.xcconfig"; sourceTree = "<group>"; };
+		AD1EF13C2671E375557F23E9 /* Pods-LibMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibMVC.debug.xcconfig"; path = "Target Support Files/Pods-LibMVC/Pods-LibMVC.debug.xcconfig"; sourceTree = "<group>"; };
+		C0FB77A75AB0102F350EA9EB /* Pods-InternetShopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternetShopping.release.xcconfig"; path = "Target Support Files/Pods-InternetShopping/Pods-InternetShopping.release.xcconfig"; sourceTree = "<group>"; };
+		C39FF16CDBEE627B01C22410 /* Pods_InternetShopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InternetShopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF04634077153DE3099AB029 /* Pods-InternetShopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternetShopping.debug.xcconfig"; path = "Target Support Files/Pods-InternetShopping/Pods-InternetShopping.debug.xcconfig"; sourceTree = "<group>"; };
 		F518209D229A93830084B8BE /* InternetShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51820A0229A93830084B8BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51820A2229A93830084B8BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +138,16 @@
 		F5182101229EF0740084B8BE /* SeconScreenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SeconScreenStoryboard.storyboard; sourceTree = "<group>"; };
 		F5182103229EF0FE0084B8BE /* RootCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5182105229EF1D60084B8BE /* SecondScreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5206ADD22A27C0100FA3E6E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F5206AE522A2B4BE00FA3E6E /* LibStyles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibStyles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5206AE722A2B4BE00FA3E6E /* LibStyles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibStyles.h; sourceTree = "<group>"; };
+		F5206AE822A2B4BE00FA3E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5206AED22A2B4BE00FA3E6E /* LibStylesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibStylesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5206AF422A2B4BE00FA3E6E /* LibStylesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibStylesTests.swift; sourceTree = "<group>"; };
+		F5206AF622A2B4BE00FA3E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5206B0222A2B52F00FA3E6E /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		F5206B0522A2B6FD00FA3E6E /* LabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
+		F5206B0722A2B95D00FA3E6E /* TextFieldStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F51820C1229AA97C0084B8BE /* LibMVC.framework in Frameworks */,
+				F5206AFA22A2B4BE00FA3E6E /* LibStyles.framework in Frameworks */,
+				1735B5E54280856118C00857 /* Pods_InternetShopping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,18 +165,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6E13EF00A4BA381F708F65 /* Pods_LibMVC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5206AE222A2B4BE00FA3E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5206AEA22A2B4BE00FA3E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5206AEE22A2B4BE00FA3E6E /* LibStyles.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7522403751E67E409C50C940 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF04634077153DE3099AB029 /* Pods-InternetShopping.debug.xcconfig */,
+				C0FB77A75AB0102F350EA9EB /* Pods-InternetShopping.release.xcconfig */,
+				AD1EF13C2671E375557F23E9 /* Pods-LibMVC.debug.xcconfig */,
+				60D60D0DFBF3F5BE4849FACA /* Pods-LibMVC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB50FDD4C3103188470D47B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C39FF16CDBEE627B01C22410 /* Pods_InternetShopping.framework */,
+				271E8FE4D2C2E5B08A50C67F /* Pods_LibMVC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5182094229A93830084B8BE = {
 			isa = PBXGroup;
 			children = (
 				F518209F229A93830084B8BE /* InternetShopping */,
 				F51820BB229AA97C0084B8BE /* LibMVC */,
+				F5206AE622A2B4BE00FA3E6E /* LibStyles */,
+				F5206AF322A2B4BE00FA3E6E /* LibStylesTests */,
 				F518209E229A93830084B8BE /* Products */,
+				7522403751E67E409C50C940 /* Pods */,
+				AB50FDD4C3103188470D47B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +225,8 @@
 			children = (
 				F518209D229A93830084B8BE /* InternetShopping.app */,
 				F51820BA229AA97B0084B8BE /* LibMVC.framework */,
+				F5206AE522A2B4BE00FA3E6E /* LibStyles.framework */,
+				F5206AED22A2B4BE00FA3E6E /* LibStylesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +234,7 @@
 		F518209F229A93830084B8BE /* InternetShopping */ = {
 			isa = PBXGroup;
 			children = (
+				F5206ADD22A27C0100FA3E6E /* Podfile */,
 				F51820EA229E76D60084B8BE /* New Group */,
 				F51820A0229A93830084B8BE /* AppDelegate.swift */,
 				F51820A2229A93830084B8BE /* ViewController.swift */,
@@ -254,6 +349,35 @@
 			path = RootCollection;
 			sourceTree = "<group>";
 		};
+		F5206AE622A2B4BE00FA3E6E /* LibStyles */ = {
+			isa = PBXGroup;
+			children = (
+				F5206AE722A2B4BE00FA3E6E /* LibStyles.h */,
+				F5206B0422A2B53800FA3E6E /* Sources */,
+				F5206AE822A2B4BE00FA3E6E /* Info.plist */,
+			);
+			path = LibStyles;
+			sourceTree = "<group>";
+		};
+		F5206AF322A2B4BE00FA3E6E /* LibStylesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5206AF422A2B4BE00FA3E6E /* LibStylesTests.swift */,
+				F5206AF622A2B4BE00FA3E6E /* Info.plist */,
+			);
+			path = LibStylesTests;
+			sourceTree = "<group>";
+		};
+		F5206B0422A2B53800FA3E6E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F5206B0222A2B52F00FA3E6E /* Style.swift */,
+				F5206B0522A2B6FD00FA3E6E /* LabelStyles.swift */,
+				F5206B0722A2B95D00FA3E6E /* TextFieldStyles.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -265,6 +389,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5206AE022A2B4BE00FA3E6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5206AF722A2B4BE00FA3E6E /* LibStyles.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -272,15 +404,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F51820B2229A93860084B8BE /* Build configuration list for PBXNativeTarget "InternetShopping" */;
 			buildPhases = (
+				511FE114BC676C6A9BE70F03 /* [CP] Check Pods Manifest.lock */,
 				F5182099229A93830084B8BE /* Sources */,
 				F518209A229A93830084B8BE /* Frameworks */,
 				F518209B229A93830084B8BE /* Resources */,
 				F51820C6229AA97C0084B8BE /* Embed Frameworks */,
+				9B9B742151906DB6FA2EDA49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				F51820C0229AA97C0084B8BE /* PBXTargetDependency */,
+				F5206AF922A2B4BE00FA3E6E /* PBXTargetDependency */,
 			);
 			name = InternetShopping;
 			productName = InternetShopping;
@@ -291,6 +426,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F51820C3229AA97C0084B8BE /* Build configuration list for PBXNativeTarget "LibMVC" */;
 			buildPhases = (
+				CCEA2F785963735DFA398BFD /* [CP] Check Pods Manifest.lock */,
 				F51820B5229AA97B0084B8BE /* Headers */,
 				F51820B6229AA97B0084B8BE /* Sources */,
 				F51820B7229AA97B0084B8BE /* Frameworks */,
@@ -304,6 +440,43 @@
 			productName = LibMVC;
 			productReference = F51820BA229AA97B0084B8BE /* LibMVC.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		F5206AE422A2B4BE00FA3E6E /* LibStyles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5206B0022A2B4BE00FA3E6E /* Build configuration list for PBXNativeTarget "LibStyles" */;
+			buildPhases = (
+				F5206AE022A2B4BE00FA3E6E /* Headers */,
+				F5206AE122A2B4BE00FA3E6E /* Sources */,
+				F5206AE222A2B4BE00FA3E6E /* Frameworks */,
+				F5206AE322A2B4BE00FA3E6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibStyles;
+			productName = LibStyles;
+			productReference = F5206AE522A2B4BE00FA3E6E /* LibStyles.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5206AEC22A2B4BE00FA3E6E /* LibStylesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5206B0122A2B4BE00FA3E6E /* Build configuration list for PBXNativeTarget "LibStylesTests" */;
+			buildPhases = (
+				F5206AE922A2B4BE00FA3E6E /* Sources */,
+				F5206AEA22A2B4BE00FA3E6E /* Frameworks */,
+				F5206AEB22A2B4BE00FA3E6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5206AF022A2B4BE00FA3E6E /* PBXTargetDependency */,
+				F5206AF222A2B4BE00FA3E6E /* PBXTargetDependency */,
+			);
+			name = LibStylesTests;
+			productName = LibStylesTests;
+			productReference = F5206AED22A2B4BE00FA3E6E /* LibStylesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -322,6 +495,14 @@
 						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1020;
 					};
+					F5206AE422A2B4BE00FA3E6E = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					F5206AEC22A2B4BE00FA3E6E = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F518209C229A93830084B8BE;
+					};
 				};
 			};
 			buildConfigurationList = F5182098229A93830084B8BE /* Build configuration list for PBXProject "InternetShopping" */;
@@ -339,6 +520,8 @@
 			targets = (
 				F518209C229A93830084B8BE /* InternetShopping */,
 				F51820B9229AA97B0084B8BE /* LibMVC */,
+				F5206AE422A2B4BE00FA3E6E /* LibStyles */,
+				F5206AEC22A2B4BE00FA3E6E /* LibStylesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -348,6 +531,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5206ADE22A27C0200FA3E6E /* Podfile in Resources */,
 				F5182102229EF0740084B8BE /* SeconScreenStoryboard.storyboard in Resources */,
 				F51820AE229A93860084B8BE /* LaunchScreen.storyboard in Resources */,
 				F51820AB229A93860084B8BE /* Assets.xcassets in Resources */,
@@ -359,10 +543,94 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5206ADF22A27C0200FA3E6E /* Podfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5206AE322A2B4BE00FA3E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5206AEB22A2B4BE00FA3E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		511FE114BC676C6A9BE70F03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InternetShopping-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B9B742151906DB6FA2EDA49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InternetShopping/Pods-InternetShopping-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InternetShopping/Pods-InternetShopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCEA2F785963735DFA398BFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LibMVC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5182099229A93830084B8BE /* Sources */ = {
@@ -404,6 +672,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F5206AE122A2B4BE00FA3E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5206B0622A2B6FD00FA3E6E /* LabelStyles.swift in Sources */,
+				F5206B0822A2B95D00FA3E6E /* TextFieldStyles.swift in Sources */,
+				F5206B0322A2B52F00FA3E6E /* Style.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5206AE922A2B4BE00FA3E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5206AF522A2B4BE00FA3E6E /* LibStylesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -411,6 +697,21 @@
 			isa = PBXTargetDependency;
 			target = F51820B9229AA97B0084B8BE /* LibMVC */;
 			targetProxy = F51820BF229AA97C0084B8BE /* PBXContainerItemProxy */;
+		};
+		F5206AF022A2B4BE00FA3E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5206AE422A2B4BE00FA3E6E /* LibStyles */;
+			targetProxy = F5206AEF22A2B4BE00FA3E6E /* PBXContainerItemProxy */;
+		};
+		F5206AF222A2B4BE00FA3E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F518209C229A93830084B8BE /* InternetShopping */;
+			targetProxy = F5206AF122A2B4BE00FA3E6E /* PBXContainerItemProxy */;
+		};
+		F5206AF922A2B4BE00FA3E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5206AE422A2B4BE00FA3E6E /* LibStyles */;
+			targetProxy = F5206AF822A2B4BE00FA3E6E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -552,8 +853,10 @@
 		};
 		F51820B3229A93860084B8BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF04634077153DE3099AB029 /* Pods-InternetShopping.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T288BZ827T;
@@ -571,8 +874,10 @@
 		};
 		F51820B4229A93860084B8BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0FB77A75AB0102F350EA9EB /* Pods-InternetShopping.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T288BZ827T;
@@ -590,7 +895,9 @@
 		};
 		F51820C4229AA97C0084B8BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD1EF13C2671E375557F23E9 /* Pods-LibMVC.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -620,7 +927,9 @@
 		};
 		F51820C5229AA97C0084B8BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60D60D0DFBF3F5BE4849FACA /* Pods-LibMVC.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -644,6 +953,105 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F5206AFC22A2B4BE00FA3E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T288BZ827T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LibStyles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "try-to-do-similar-project.LibStyles";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5206AFD22A2B4BE00FA3E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = T288BZ827T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = LibStyles/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "try-to-do-similar-project.LibStyles";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F5206AFE22A2B4BE00FA3E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T288BZ827T;
+				INFOPLIST_FILE = LibStylesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "try-to-do-similar-project.LibStylesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InternetShopping.app/InternetShopping";
+			};
+			name = Debug;
+		};
+		F5206AFF22A2B4BE00FA3E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T288BZ827T;
+				INFOPLIST_FILE = LibStylesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "try-to-do-similar-project.LibStylesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InternetShopping.app/InternetShopping";
 			};
 			name = Release;
 		};
@@ -673,6 +1081,24 @@
 			buildConfigurations = (
 				F51820C4229AA97C0084B8BE /* Debug */,
 				F51820C5229AA97C0084B8BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5206B0022A2B4BE00FA3E6E /* Build configuration list for PBXNativeTarget "LibStyles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5206AFC22A2B4BE00FA3E6E /* Debug */,
+				F5206AFD22A2B4BE00FA3E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5206B0122A2B4BE00FA3E6E /* Build configuration list for PBXNativeTarget "LibStylesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5206AFE22A2B4BE00FA3E6E /* Debug */,
+				F5206AFF22A2B4BE00FA3E6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
