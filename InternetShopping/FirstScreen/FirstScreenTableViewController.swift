@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import LibMVC
 
-class FirstScreenTableViewController: RootTableViewControler {
+// !!! in info.plst changed "Main storyboard file base name" from "Main"
+
+public protocol FirstScreenTableViewControllerProtocol {
+    var data: FirstScreenModel {get set}
+}
+
+class FirstScreenTableViewController: RootTableViewControler, FirstScreenTableViewControllerProtocol {
     
     // MARK: -
     // MARK: Properties
@@ -22,6 +29,7 @@ class FirstScreenTableViewController: RootTableViewControler {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     // MARK: - Table view data source
@@ -44,7 +52,7 @@ class FirstScreenTableViewController: RootTableViewControler {
         if let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? FirstScreenTableViewCell {
             cell.categoryLabel.text = data.namesOfstrings[indexPath.item]
             let imageName = data.namesOfImages[indexPath.item]
-            let image = (imageName.count > 1) ? UIImage(imageLiteralResourceName: imageName) : UIImage()
+            let image = openImage(imageName)
             cell.categoryImage.image = image
             
             cell.updateConstraints()
@@ -52,6 +60,14 @@ class FirstScreenTableViewController: RootTableViewControler {
         else {
             return UITableViewCell()
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "SecondScreenStoryboard", bundle: nil)
+        guard let vc: UIViewController = (storyboard.instantiateViewController(withIdentifier: "SecondScreenCollectionViewController") as UIViewController) else {
+            print("Error with conversion vc")
+        }
+        present(vc, animated: true, completion: nil)
     }
 
 }

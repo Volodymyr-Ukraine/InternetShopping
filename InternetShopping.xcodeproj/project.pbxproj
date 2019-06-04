@@ -51,6 +51,9 @@
 		F5206B0322A2B52F00FA3E6E /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0222A2B52F00FA3E6E /* Style.swift */; };
 		F5206B0622A2B6FD00FA3E6E /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0522A2B6FD00FA3E6E /* LabelStyles.swift */; };
 		F5206B0822A2B95D00FA3E6E /* TextFieldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0722A2B95D00FA3E6E /* TextFieldStyles.swift */; };
+		F5206B0A22A3B7C700FA3E6E /* SecondScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0922A3B7C700FA3E6E /* SecondScreenModel.swift */; };
+		F5206B0C22A3B80F00FA3E6E /* SecondScreenTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0B22A3B80F00FA3E6E /* SecondScreenTextFields.swift */; };
+		F5206B0E22A3BA0A00FA3E6E /* OpenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0D22A3BA0A00FA3E6E /* OpenImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +151,9 @@
 		F5206B0222A2B52F00FA3E6E /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		F5206B0522A2B6FD00FA3E6E /* LabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
 		F5206B0722A2B95D00FA3E6E /* TextFieldStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyles.swift; sourceTree = "<group>"; };
+		F5206B0922A3B7C700FA3E6E /* SecondScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenModel.swift; sourceTree = "<group>"; };
+		F5206B0B22A3B80F00FA3E6E /* SecondScreenTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenTextFields.swift; sourceTree = "<group>"; };
+		F5206B0D22A3BA0A00FA3E6E /* OpenImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +283,7 @@
 				F51820D1229ACFEE0084B8BE /* Cast.swift */,
 				F51820D5229AD0880084B8BE /* Setup.swift */,
 				F51820D3229AD0000084B8BE /* Configure.swift */,
+				F5206B0D22A3BA0A00FA3E6E /* OpenImage.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -335,6 +342,8 @@
 				F51820FF229EEDE40084B8BE /* SecondScreenCollectionViewController.swift */,
 				F5182105229EF1D60084B8BE /* SecondScreenCollectionViewCell.swift */,
 				F5182101229EF0740084B8BE /* SeconScreenStoryboard.storyboard */,
+				F5206B0922A3B7C700FA3E6E /* SecondScreenModel.swift */,
+				F5206B0B22A3B80F00FA3E6E /* SecondScreenTextFields.swift */,
 			);
 			name = SecondScreen;
 			path = FirstScreen/SecondScreen;
@@ -644,6 +653,8 @@
 				F5182100229EEDE40084B8BE /* SecondScreenCollectionViewController.swift in Sources */,
 				F51820F0229E7A990084B8BE /* RootTableView.swift in Sources */,
 				F51820FA229E84870084B8BE /* FirstScreenTableViewCell.swift in Sources */,
+				F5206B0A22A3B7C700FA3E6E /* SecondScreenModel.swift in Sources */,
+				F5206B0C22A3B80F00FA3E6E /* SecondScreenTextFields.swift in Sources */,
 				F51820A9229A93830084B8BE /* InternetShopping.xcdatamodeld in Sources */,
 				F51820F7229E7DCE0084B8BE /* FirstScreensTextFields.swift in Sources */,
 				F51820A1229A93830084B8BE /* AppDelegate.swift in Sources */,
@@ -664,6 +675,7 @@
 				F51820CC229AA9CC0084B8BE /* RootViewController.swift in Sources */,
 				F51820FE229EEB4E0084B8BE /* RootCollectionViewController.swift in Sources */,
 				F51820D9229AF10D0084B8BE /* ViewConvertible.swift in Sources */,
+				F5206B0E22A3BA0A00FA3E6E /* OpenImage.swift in Sources */,
 				F51820D6229AD0880084B8BE /* Setup.swift in Sources */,
 				F5182104229EF0FE0084B8BE /* RootCollectionViewCell.swift in Sources */,
 				F51820EF229E7A070084B8BE /* RootTableView.swift in Sources */,

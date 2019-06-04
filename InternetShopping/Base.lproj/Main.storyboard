@@ -39,8 +39,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="CategoryImage" destination="VlI-lz-oSH" id="0Eg-HA-ZRW"/>
-                                    <outlet property="CategoryLabel" destination="hkL-mu-0eR" id="zMI-aa-u3V"/>
+                                    <outlet property="categoryImage" destination="VlI-lz-oSH" id="aAX-3l-pzh"/>
+                                    <outlet property="categoryLabel" destination="hkL-mu-0eR" id="bBe-5U-CjQ"/>
+                                    <segue destination="Au5-xr-udP" kind="show" id="Gc6-cJ-YJ0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -53,6 +54,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ko5-LU-DAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="337.68115942028987" y="28.794642857142854"/>
+        </scene>
+        <!--SeconScreenStoryboard-->
+        <scene sceneID="pdm-Qb-p4d">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Second" storyboardName="SeconScreenStoryboard" id="Au5-xr-udP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzU-0f-Qz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="-42"/>
         </scene>
     </scenes>
 </document>

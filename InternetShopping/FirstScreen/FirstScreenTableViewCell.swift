@@ -28,6 +28,7 @@ class FirstScreenTableViewCell: UITableViewCell {
     // MARK: -
     // MARK: Outlets
     
+    
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var categoryImage: UIImageView!
     
@@ -63,6 +64,7 @@ class FirstScreenTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
     
     
 

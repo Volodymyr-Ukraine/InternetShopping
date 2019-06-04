@@ -10,7 +10,11 @@ import Foundation
 
 // Temporary, in future may be changed on reading JSON
 
-public class FirstScreensTextFields {
+public protocol FirstScreensTextFieldsProtocol {
+    var fieldsArray: [FirstScreensTextField] {get set}
+}
+
+public class FirstScreensTextFields: FirstScreensTextFieldsProtocol {
     public var fieldsArray: [FirstScreensTextField] = []
     init() {
         fieldsArray.append(FirstScreensTextField(

@@ -11,5 +11,9 @@ import LibMVC
 
 class SecondScreenCollectionViewCell: RootCollectionViewCell {
     
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var itemImage: UIImageView!
+    
     
 }

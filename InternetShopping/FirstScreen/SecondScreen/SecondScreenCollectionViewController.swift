@@ -10,8 +10,11 @@ import UIKit
 import LibMVC
 
 
-class SecondScreenCollectionViewController: RootCollectionViewController {
-
+class SecondScreenCollectionViewController: UICollectionViewController{//RootCollectionViewController {
+    let reuseIdentifier = "CollectionCell"
+    var data = SecondScreenModel()
+    private var cellID = "ItemCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +22,7 @@ class SecondScreenCollectionViewController: RootCollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+      //  self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -38,21 +41,26 @@ class SecondScreenCollectionViewController: RootCollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return data.namesOfstrings.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
-        return cell
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? SecondScreenCollectionViewCell {
+            cell.descriptionLabel.text = data.namesOfstrings[indexPath.item]
+            cell.priceLabel.text = data.pricesString[indexPath.item]
+            let imageName = data.namesOfImages[indexPath.item]
+            let image = openImage(imageName)
+            cell.itemImage.image = image
+            return cell
+        }
+        else {
+            return UICollectionViewCell()
+        }
     }
 
     // MARK: UICollectionViewDelegate

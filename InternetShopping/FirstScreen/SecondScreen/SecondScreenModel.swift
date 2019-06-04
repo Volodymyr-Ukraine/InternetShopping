@@ -1,20 +1,21 @@
 //
-//  FirstScreenModel.swift
+//  SecondScreenModel.swift
 //  InternetShopping
 //
-//  Created by Vladimir on 5/29/19.
+//  Created by Vladimir on 6/2/19.
 //  Copyright © 2019 Volodymyr. All rights reserved.
 //
 
 import Foundation
 
-public protocol FirstScreenModelProtocol {
+public protocol SecondScreenModelProtocol {
     var namesOfstrings: [String] {get set}
     var jumpScreens: [String] {get set}
     var namesOfImages: [String] {get set}
+    var pricesString: [String] {get set}
 }
 
-public class FirstScreenModel: FirstScreenModelProtocol {
+public class SecondScreenModel: SecondScreenModelProtocol {
     // MARK: -
     // MARK: Enums
     
@@ -22,24 +23,27 @@ public class FirstScreenModel: FirstScreenModelProtocol {
         case name
         case jumpTo
         case image
+        case price
     }
     
     // MARK: -
     // MARK: Properties
     
-    private var data: FirstScreensTextFields
+    private var data: SecondScreensTextFields
     public var namesOfstrings: [String] = []
     public var jumpScreens: [String] = []
     public var namesOfImages: [String] = []
+    public var pricesString: [String] = []
     
     // MARK: -
     // MARK: Init and Deinit
     
     public init() {
-        self.data = FirstScreensTextFields()
+        self.data = SecondScreensTextFields()
         self.namesOfstrings = sortData(input: .name)
         self.jumpScreens = sortData(input: .jumpTo)
         self.namesOfImages = sortData(input: .image)
+        self.pricesString = sortData(input: .price)
     }
     
     // MARK: -
@@ -47,7 +51,7 @@ public class FirstScreenModel: FirstScreenModelProtocol {
     
     private func sortData(input: Field) -> [String] {
         return data.fieldsArray.sorted { (first, second) -> Bool in
-            first.order<second.order
+            first.name<second.name
             }.map{
                 switch input {
                 case .name:
@@ -56,6 +60,8 @@ public class FirstScreenModel: FirstScreenModelProtocol {
                     return $0.imageTitle
                 case .jumpTo:
                     return $0.jumpTo
+                case .price:
+                    return "\($0.price) $"
                 }
         }
         
