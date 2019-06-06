@@ -1,0 +1,6 @@
+framework module Pods_LibStyles {
+  umbrella header "Pods-LibStyles-umbrella.h"
+
+  export *
+  module * { export * }
+}

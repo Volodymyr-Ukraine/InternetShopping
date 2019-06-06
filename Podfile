@@ -7,6 +7,7 @@ target 'InternetShopping' do
 
   # Pods for InternetShopping
     pod 'SnapKit', '~> 4.0'
+    pod 'Alamofire', '~> 5.0.0-beta.5'
 
 end
 
@@ -16,6 +17,7 @@ target 'LibMVC' do
 
   # Pods for LibMVC
     pod 'SnapKit', '~> 4.0'
+    pod 'Alamofire', '~> 5.0.0-beta.5'
 
 end
 
