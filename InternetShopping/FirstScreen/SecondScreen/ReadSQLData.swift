@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+// temporary dont used !!!
 
 public class ReadSQLData: SecondScreenModelProtocol, SecondScreensTextFieldsProtocol {
     public var fieldsArray: [SecondScreensTextField] = []
@@ -21,6 +22,9 @@ public class ReadSQLData: SecondScreenModelProtocol, SecondScreensTextFieldsProt
     public var pricesString: [String]
     
     private init(){
-        
+        self.namesOfstrings = []
+        self.jumpScreens = []
+        self.namesOfImages = []
+        self.pricesString = []
     }
 }

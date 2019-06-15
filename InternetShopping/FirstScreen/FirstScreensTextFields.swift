@@ -46,10 +46,10 @@ public class FirstScreensTextFields: FirstScreensTextFieldsProtocol {
 }
 
 public struct FirstScreensTextField {
-    public var name: String
-    public var imageTitle: String
-    public var order: Int
-    public var jumpTo: String
+    public let name: String
+    public let imageTitle: String
+    public let order: Int
+    public let jumpTo: String
     init(_ _name: String, _ _order: Int, _ image: String, _ _jumpTo: String) {
         self.name = _name
         self.order = _order

@@ -46,11 +46,11 @@ public class SecondScreensTextFields: SecondScreensTextFieldsProtocol {
 }
 
 public struct SecondScreensTextField {
-    public var name: String
-    public var imageTitle: String
-    public var price: Float
+    public let name: String
+    public let imageTitle: String
+    public let price: Float
    // public var order: Int
-    public var jumpTo: String
+    public let jumpTo: String
     init(_ _name: String, _ _price: Float, _ image: String, _ _jumpTo: String) {
         self.name = _name
         self.price = _price
