@@ -41,7 +41,7 @@ class FirstScreenTableViewController: RootTableViewControler, FirstScreenTableVi
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return data.namesOfstrings.count
+        return self.data.namesOfstrings.count
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -49,12 +49,11 @@ class FirstScreenTableViewController: RootTableViewControler, FirstScreenTableVi
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? FirstScreenTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: self.cellID, for: indexPath) as? FirstScreenTableViewCell {
             cell.categoryLabel.text = data.namesOfstrings[indexPath.item]
-            let imageName = data.namesOfImages[indexPath.item]
+            let imageName = self.data.namesOfImages[indexPath.item]
             let image = openImage(imageName)
             cell.categoryImage.image = image
-            
             cell.updateConstraints()
             return cell}
         else {
@@ -64,8 +63,9 @@ class FirstScreenTableViewController: RootTableViewControler, FirstScreenTableVi
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "SecondScreenStoryboard", bundle: nil)
-        guard let vc: UIViewController = (storyboard.instantiateViewController(withIdentifier: "SecondScreenCollectionViewController") as UIViewController) else {
+        guard let vc: UIViewController = (storyboard.instantiateViewController(withIdentifier: "SecondScreenCollectionViewController")) else {
             print("Error with conversion vc")
+            return
         }
         present(vc, animated: true, completion: nil)
     }

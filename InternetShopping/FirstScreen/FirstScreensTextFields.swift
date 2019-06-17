@@ -17,27 +17,27 @@ public protocol FirstScreensTextFieldsProtocol {
 public class FirstScreensTextFields: FirstScreensTextFieldsProtocol {
     public var fieldsArray: [FirstScreensTextField] = []
     init() {
-        fieldsArray.append(FirstScreensTextField(
+        self.fieldsArray.append(FirstScreensTextField(
             "Комп'ютери",
             1,
             "FSLKomps",
             "SecondScreen"))
-        fieldsArray.append(FirstScreensTextField(
+        self.fieldsArray.append(FirstScreensTextField(
             "Телефони",
             3,
             "FSLSmartphones",
             "SecondScreen"))
-        fieldsArray.append(FirstScreensTextField(
+        self.fieldsArray.append(FirstScreensTextField(
             "Ноутбуки",
             2,
             "FSLNotebooks",
             "SecondScreen"))
-        fieldsArray.append(FirstScreensTextField(
+        self.fieldsArray.append(FirstScreensTextField(
             "Програмне забезпечення",
             4,
             "FSLPz",
             "SecondScreen"))
-        fieldsArray.append(FirstScreensTextField(
+        self.fieldsArray.append(FirstScreensTextField(
             "Периферія",
             5,
             "FSLPeripheriya",

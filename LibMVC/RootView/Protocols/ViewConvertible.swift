@@ -13,5 +13,6 @@ public protocol ViewConvertible: AnyObject {
 
 extension ViewConvertible where Self: UIView {
     public var view: UIView {
-        return self}
+        return self
+    }
 }

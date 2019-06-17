@@ -10,7 +10,9 @@ import UIKit
 
 open class RootCollectionViewCell: UICollectionViewCell {
     // MARK: Init and Deinit
-    
+    override open var reuseIdentifier: String? {
+        return toString(type(of: self))
+    }
     public func rootInit(){
         
     }

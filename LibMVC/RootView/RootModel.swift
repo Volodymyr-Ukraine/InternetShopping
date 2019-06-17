@@ -9,11 +9,11 @@
 import Foundation
 
 public protocol RootModel{
-    associatedtype Controler // means Controler of this RootModel and other names - the same
+    associatedtype Controller // means Controler of this RootModel and other names - the same
     associatedtype Presentation
     associatedtype Assembly
     
-    var controler: Controler { get }
+    var controler: Controller { get }
     var presentation: Presentation { get }
     var assembly: Assembly { get }
 }

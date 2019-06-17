@@ -37,16 +37,16 @@ public class FirstScreenModel: FirstScreenModelProtocol {
     
     public init() {
         self.data = FirstScreensTextFields()
-        self.namesOfstrings = sortData(input: .name)
-        self.jumpScreens = sortData(input: .jumpTo)
-        self.namesOfImages = sortData(input: .image)
+        self.namesOfstrings = self.sortData(input: .name)
+        self.jumpScreens = self.sortData(input: .jumpTo)
+        self.namesOfImages = self.sortData(input: .image)
     }
     
     // MARK: -
     // MARK: Methods
     
     private func sortData(input: Field) -> [String] {
-        return data.fieldsArray.sorted { (first, second) -> Bool in
+        return self.data.fieldsArray.sorted { (first, second) -> Bool in
             first.order<second.order
             }.map{
                 switch input {

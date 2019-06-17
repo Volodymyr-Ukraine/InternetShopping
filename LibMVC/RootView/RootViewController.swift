@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class RootViewController <Model, View, Assembly>: UIViewController, RootViewGettable
+open class RootViewController <Model, View, Assembly>: UIViewController, RootViewGetable
     where
     Model: LibMVC.RootModel,
     Assembly: LibMVC.RootAssembly, // ??? без нього відео працює
@@ -74,7 +74,7 @@ open class RootViewController <Model, View, Assembly>: UIViewController, RootVie
         self.configure(model: self.model.controler)
     }
     
-    open func configure(model: Model.Controler) {
+    open func configure(model: Model.Controller) {
         
     }
     

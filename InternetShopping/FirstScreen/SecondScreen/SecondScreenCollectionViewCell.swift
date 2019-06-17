@@ -38,7 +38,7 @@ class SecondScreenCollectionViewCell: RootCollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        doStyleLabel() // styling once
+        self.doStyleLabel() // styling once
     }
     
     // MARK: -

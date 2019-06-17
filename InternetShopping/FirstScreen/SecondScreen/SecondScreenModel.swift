@@ -50,7 +50,7 @@ public class SecondScreenModel: SecondScreenModelProtocol {
     // MARK: Methods
     
     private func sortData(input: Field) -> [String] {
-        return data.fieldsArray.sorted { (first, second) -> Bool in
+        return self.data.fieldsArray.sorted { (first, second) -> Bool in
             first.name<second.name
             }.map{
                 switch input {

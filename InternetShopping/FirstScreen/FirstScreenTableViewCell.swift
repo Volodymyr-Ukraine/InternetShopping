@@ -8,9 +8,10 @@
 
 import UIKit
 import SnapKit
+import LibMVC
 import LibStyles
 
-class FirstScreenTableViewCell: UITableViewCell {
+class FirstScreenTableViewCell: RootTableViewCell {
     
     // MARK: -
     // MARK: Constants for Constraints
@@ -37,22 +38,22 @@ class FirstScreenTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        doStyleLabel() // styling once
+        self.doStyleLabel() // styling once
     }
 
     // MARK: -
     // MARK: Methods
     
     override func updateConstraints() {
-        categoryImage.snp.makeConstraints{ (make) -> Void in
-            make.height.equalTo(self).offset(SpacingRules.heightImage)
-            make.centerX.equalTo(self)
-            make.top.equalTo(self).offset(SpacingRules.top)
+        self.categoryImage.snp.makeConstraints{ (make) -> Void in
+            make.height.equalToSuperview().offset(SpacingRules.heightImage)
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(SpacingRules.top)
         }
-        categoryLabel.snp.makeConstraints{ (make) -> Void in
-            make.width.equalTo(self).offset(SpacingRules.widthLable)
-            make.centerX.equalTo(self)
-            make.bottom.equalTo(self).offset(SpacingRules.bottom)
+        self.categoryLabel.snp.makeConstraints{ (make) -> Void in
+            make.width.equalToSuperview().offset(SpacingRules.widthLable)
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().offset(SpacingRules.bottom)
         }
         super.updateConstraints()
     }

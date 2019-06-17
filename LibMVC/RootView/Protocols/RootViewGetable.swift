@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol RootViewGettable {
+public protocol RootViewGetable {
     associatedtype RootViewType
     associatedtype View
     
@@ -16,7 +16,7 @@ public protocol RootViewGettable {
     var rootView: RootViewType? {get} // extended in extention
 }
 
-public extension RootViewGettable {
+public extension RootViewGetable {
     var rootView: RootViewType? {
         return self.viewIfLoaded.flatMap(cast)
     }

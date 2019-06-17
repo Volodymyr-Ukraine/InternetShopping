@@ -57,6 +57,9 @@
 		F5206B0E22A3BA0A00FA3E6E /* OpenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0D22A3BA0A00FA3E6E /* OpenImage.swift */; };
 		F5206B1022A6898300FA3E6E /* ReadSQLData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B0F22A6898300FA3E6E /* ReadSQLData.swift */; };
 		F5206B1322A856FD00FA3E6E /* CoreModelData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5206B1122A856FC00FA3E6E /* CoreModelData.xcdatamodeld */; };
+		F5206B1622B58C5900FA3E6E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B1522B58C5900FA3E6E /* Strings.swift */; };
+		F5206B5822B7BCE400FA3E6E /* ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B5722B7BCE400FA3E6E /* ToString.swift */; };
+		F5206B5A22B7BFBE00FA3E6E /* RootTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B5922B7BFBE00FA3E6E /* RootTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +123,7 @@
 		F51820A2229A93830084B8BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F51820A5229A93830084B8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F51820A8229A93830084B8BE /* InternetShopping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InternetShopping.xcdatamodel; sourceTree = "<group>"; };
-		F51820AA229A93860084B8BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F51820AA229A93860084B8BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		F51820AD229A93860084B8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51820AF229A93860084B8BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51820BA229AA97B0084B8BE /* LibMVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibMVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +165,9 @@
 		F5206B0D22A3BA0A00FA3E6E /* OpenImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenImage.swift; sourceTree = "<group>"; };
 		F5206B0F22A6898300FA3E6E /* ReadSQLData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadSQLData.swift; sourceTree = "<group>"; };
 		F5206B1222A856FD00FA3E6E /* CoreModelData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreModelData.xcdatamodel; sourceTree = "<group>"; };
+		F5206B1522B58C5900FA3E6E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		F5206B5722B7BCE400FA3E6E /* ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToString.swift; sourceTree = "<group>"; };
+		F5206B5922B7BFBE00FA3E6E /* RootTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,13 +259,12 @@
 			isa = PBXGroup;
 			children = (
 				F5206ADD22A27C0100FA3E6E /* Podfile */,
-				F51820EA229E76D60084B8BE /* New Group */,
 				F51820A0229A93830084B8BE /* AppDelegate.swift */,
 				F51820A2229A93830084B8BE /* ViewController.swift */,
 				F51820FB229EE3670084B8BE /* SecondScreen */,
 				F51820F8229E84530084B8BE /* FirstScreen */,
 				F51820A4229A93830084B8BE /* Main.storyboard */,
-				F51820AA229A93860084B8BE /* Assets.xcassets */,
+				F5206B1422B58BB400FA3E6E /* Resources */,
 				F51820AC229A93860084B8BE /* LaunchScreen.storyboard */,
 				F51820AF229A93860084B8BE /* Info.plist */,
 				F51820A7229A93830084B8BE /* InternetShopping.xcdatamodeld */,
@@ -296,6 +301,7 @@
 				F51820D5229AD0880084B8BE /* Setup.swift */,
 				F51820D3229AD0000084B8BE /* Configure.swift */,
 				F5206B0D22A3BA0A00FA3E6E /* OpenImage.swift */,
+				F5206B5722B7BCE400FA3E6E /* ToString.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -321,17 +327,11 @@
 			path = RootView;
 			sourceTree = "<group>";
 		};
-		F51820EA229E76D60084B8BE /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		F51820EB229E79490084B8BE /* RootTable */ = {
 			isa = PBXGroup;
 			children = (
 				F51820EC229E79690084B8BE /* RootTableViewControler.swift */,
+				F5206B5922B7BFBE00FA3E6E /* RootTableViewCell.swift */,
 				F51820EE229E7A070084B8BE /* RootTableView.swift */,
 			);
 			path = RootTable;
@@ -399,6 +399,15 @@
 				F5206B0722A2B95D00FA3E6E /* TextFieldStyles.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		F5206B1422B58BB400FA3E6E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F51820AA229A93860084B8BE /* Assets.xcassets */,
+				F5206B1522B58C5900FA3E6E /* Strings.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -687,6 +696,7 @@
 			files = (
 				F51820F1229E7A9C0084B8BE /* RootTableViewControler.swift in Sources */,
 				F51820F5229E7D190084B8BE /* FirstScreenModel.swift in Sources */,
+				F5206B1622B58C5900FA3E6E /* Strings.swift in Sources */,
 				F51820A3229A93830084B8BE /* ViewController.swift in Sources */,
 				F51820F3229E7AE20084B8BE /* FirstScreenTableViewController.swift in Sources */,
 				F5182100229EEDE40084B8BE /* SecondScreenCollectionViewController.swift in Sources */,
@@ -707,9 +717,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5206B5A22B7BFBE00FA3E6E /* RootTableViewCell.swift in Sources */,
 				F51820ED229E79690084B8BE /* RootTableViewControler.swift in Sources */,
 				F51820CA229AA9B60084B8BE /* RootView.swift in Sources */,
 				F51820C8229AA9AA0084B8BE /* RootModel.swift in Sources */,
+				F5206B5822B7BCE400FA3E6E /* ToString.swift in Sources */,
 				F51820D4229AD0000084B8BE /* Configure.swift in Sources */,
 				F51820D2229ACFEE0084B8BE /* Cast.swift in Sources */,
 				F51820DB229AF79E0084B8BE /* RootAssembly.swift in Sources */,
