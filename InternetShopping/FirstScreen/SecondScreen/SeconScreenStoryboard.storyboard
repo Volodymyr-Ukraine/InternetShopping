@@ -17,6 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HVj-KV-wDt">
                             <size key="itemSize" width="107" height="141"/>
                             <size key="headerReferenceSize" width="50" height="50"/>
@@ -33,12 +34,14 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23,43 грн" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGX-Bt-oJN">
                                             <rect key="frame" x="5" y="94" width="97" height="21"/>
+                                            <gestureRecognizers/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfT-ll-NKr">
                                             <rect key="frame" x="5" y="120" width="97" height="16"/>
+                                            <gestureRecognizers/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Текст">
                                                     <attributes>
@@ -51,9 +54,11 @@
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VDO-8A-i0N">
                                             <rect key="frame" x="5" y="0.0" width="97" height="89"/>
+                                            <gestureRecognizers/>
                                         </imageView>
                                     </subviews>
                                 </view>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="SGX-Bt-oJN" firstAttribute="leading" secondItem="hMV-zP-2jg" secondAttribute="leading" constant="5" id="1NK-7P-fpf"/>
                                     <constraint firstItem="ZfT-ll-NKr" firstAttribute="leading" secondItem="hMV-zP-2jg" secondAttribute="leading" constant="5" id="3oG-PL-xbU"/>
@@ -76,6 +81,7 @@
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8uy-5v-pN5">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                             <autoresizingMask key="autoresizingMask"/>
+                            <gestureRecognizers/>
                         </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="v6h-Uz-Cg4" id="P3l-Uo-xvW"/>

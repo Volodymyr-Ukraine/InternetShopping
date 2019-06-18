@@ -8,9 +8,11 @@
 
 import Foundation
 import Alamofire
+import SQLite
 // temporary dont used !!!
 
 public class ReadSQLData: SecondScreenModelProtocol, SecondScreensTextFieldsProtocol {
+    
     public var fieldsArray: [SecondScreensTextField] = []
     
     public var namesOfstrings: [String]
@@ -26,5 +28,13 @@ public class ReadSQLData: SecondScreenModelProtocol, SecondScreensTextFieldsProt
         self.jumpScreens = []
         self.namesOfImages = []
         self.pricesString = []
+    }
+    private func connectSQL() {
+        do{
+            let db = try Connection("path/to/db.sqlite3")
+        } catch {
+            
+        }
+        
     }
 }
