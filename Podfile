@@ -9,6 +9,7 @@ target 'InternetShopping' do
     pod 'SnapKit', '~> 4.0'
     pod 'Alamofire', '~> 5.0.0-beta.5'
     pod 'SQLite.swift', '~> 0.12.0'
+    pod 'OHMySQL'
 
 end
 

@@ -9,10 +9,14 @@
 import UIKit
 
 open class RootCollectionViewCell: UICollectionViewCell {
-    // MARK: Init and Deinit
+    /*
     override open var reuseIdentifier: String? {
         return toString(type(of: self))
-    }
+    }// */
+    
+    // MARK: -
+    // MARK: Init and Deinit
+    
     public func rootInit(){
         
     }

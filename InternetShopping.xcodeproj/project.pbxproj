@@ -60,6 +60,7 @@
 		F5206B1622B58C5900FA3E6E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B1522B58C5900FA3E6E /* Strings.swift */; };
 		F5206B5822B7BCE400FA3E6E /* ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B5722B7BCE400FA3E6E /* ToString.swift */; };
 		F5206B5A22B7BFBE00FA3E6E /* RootTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B5922B7BFBE00FA3E6E /* RootTableViewCell.swift */; };
+		F5206B5C22BA27E600FA3E6E /* database.sql in Resources */ = {isa = PBXBuildFile; fileRef = F5206B5B22BA27E500FA3E6E /* database.sql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +169,7 @@
 		F5206B1522B58C5900FA3E6E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F5206B5722B7BCE400FA3E6E /* ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToString.swift; sourceTree = "<group>"; };
 		F5206B5922B7BFBE00FA3E6E /* RootTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewCell.swift; sourceTree = "<group>"; };
+		F5206B5B22BA27E500FA3E6E /* database.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = database.sql; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 		F518209F229A93830084B8BE /* InternetShopping */ = {
 			isa = PBXGroup;
 			children = (
+				F5206B5B22BA27E500FA3E6E /* database.sql */,
 				F5206ADD22A27C0100FA3E6E /* Podfile */,
 				F51820A0229A93830084B8BE /* AppDelegate.swift */,
 				F51820A2229A93830084B8BE /* ViewController.swift */,
@@ -567,6 +570,7 @@
 				F5206ADE22A27C0200FA3E6E /* Podfile in Resources */,
 				F5182102229EF0740084B8BE /* SeconScreenStoryboard.storyboard in Resources */,
 				F51820AE229A93860084B8BE /* LaunchScreen.storyboard in Resources */,
+				F5206B5C22BA27E600FA3E6E /* database.sql in Resources */,
 				F51820AB229A93860084B8BE /* Assets.xcassets in Resources */,
 				F51820A6229A93830084B8BE /* Main.storyboard in Resources */,
 			);
@@ -651,6 +655,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-InternetShopping/Pods-InternetShopping-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/OHMySQL/OHMySQL.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -659,6 +664,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHMySQL.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
