@@ -30,11 +30,41 @@ public class ReadSQLData: SecondScreenModelProtocol, SecondScreensTextFieldsProt
         self.jumpScreens = []
         self.namesOfImages = []
         self.pricesString = []
-        self.connectSQL2()
+        self.connectSQL3()
+    }
+    
+    private func connectSQL3() {
+        let url = NSURL(string: "http://testsql.zzz.com.ua/read_SQL.php")! as URL
+        // domen: rudy.zzz.com.ua
+        // main ideas taken here: https://stackoverflow.com/questions/37400639/post-data-to-a-php-method-from-swift
+        // and here: https://www.simplifiedios.net/xcode-json-example-retrieve-data-mysql/
+        
+            let request = NSMutableURLRequest(url: url)
+            request.httpMethod = "GET"
+            // let postString = ""
+            // request.httpBody = postString.data(using: String.Encoding.utf8)
+        let task = URLSession.shared.dataTask(with: request as URLRequest){
+            data, response, error in
+            
+            //let task = URLSession.shared.dataTask(with: request as URLRequest) {
+              //  data, response, error in
+                
+                if error != nil {
+                    print("error=\(error)")
+                    return
+                }
+                
+                print("response = \(response)")
+                
+                let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                print("responseString = \(responseString)")
+            }
+            task.resume()
+        
     }
     
     private func connectSQL2() {
-        let user = OHMySQLUser(userName: "Ovd9nqBaON", password: "1LlTIyVb5C", serverName: "remotemysql.com", dbName: "Ovd9nqBaON", port: 3306, socket: nil)
+        let user = OHMySQLUser(userName: "RootUser", password: "Admin1", serverName: "mysql.zzz.com.ua", dbName: "testsql", port: 3306, socket: nil)
         let coordinator = OHMySQLStoreCoordinator(user: user!)
         coordinator.encoding = .UTF8MB4
         coordinator.connect()

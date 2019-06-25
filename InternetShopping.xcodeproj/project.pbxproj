@@ -61,6 +61,12 @@
 		F5206B5822B7BCE400FA3E6E /* ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B5722B7BCE400FA3E6E /* ToString.swift */; };
 		F5206B5A22B7BFBE00FA3E6E /* RootTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B5922B7BFBE00FA3E6E /* RootTableViewCell.swift */; };
 		F5206B5C22BA27E600FA3E6E /* database.sql in Resources */ = {isa = PBXBuildFile; fileRef = F5206B5B22BA27E500FA3E6E /* database.sql */; };
+		F5206B5F22BE30C500FA3E6E /* Config.php in Resources */ = {isa = PBXBuildFile; fileRef = F5206B5E22BE30C500FA3E6E /* Config.php */; };
+		F5206B6122BE310900FA3E6E /* DbConnect.php in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6022BE310900FA3E6E /* DbConnect.php */; };
+		F5206B6322BE361B00FA3E6E /* DbOperation.php in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6222BE361B00FA3E6E /* DbOperation.php */; };
+		F5206B6522BE366900FA3E6E /* DbHandle.php in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6422BE366900FA3E6E /* DbHandle.php */; };
+		F5206B6722BFFA3A00FA3E6E /* ServerSideFile.php in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6622BFFA3A00FA3E6E /* ServerSideFile.php */; };
+		F5206B6822C1464C00FA3E6E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F51820AF229A93860084B8BE /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +176,11 @@
 		F5206B5722B7BCE400FA3E6E /* ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToString.swift; sourceTree = "<group>"; };
 		F5206B5922B7BFBE00FA3E6E /* RootTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewCell.swift; sourceTree = "<group>"; };
 		F5206B5B22BA27E500FA3E6E /* database.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = database.sql; sourceTree = SOURCE_ROOT; };
+		F5206B5E22BE30C500FA3E6E /* Config.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = Config.php; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.php; };
+		F5206B6022BE310900FA3E6E /* DbConnect.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = DbConnect.php; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.php; };
+		F5206B6222BE361B00FA3E6E /* DbOperation.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = DbOperation.php; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.php; };
+		F5206B6422BE366900FA3E6E /* DbHandle.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = DbHandle.php; sourceTree = "<group>"; };
+		F5206B6622BFFA3A00FA3E6E /* ServerSideFile.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = ServerSideFile.php; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,10 +418,23 @@
 		F5206B1422B58BB400FA3E6E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F5206B5D22BE1FA000FA3E6E /* PHP */,
 				F51820AA229A93860084B8BE /* Assets.xcassets */,
 				F5206B1522B58C5900FA3E6E /* Strings.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5206B5D22BE1FA000FA3E6E /* PHP */ = {
+			isa = PBXGroup;
+			children = (
+				F5206B5E22BE30C500FA3E6E /* Config.php */,
+				F5206B6622BFFA3A00FA3E6E /* ServerSideFile.php */,
+				F5206B6022BE310900FA3E6E /* DbConnect.php */,
+				F5206B6222BE361B00FA3E6E /* DbOperation.php */,
+				F5206B6422BE366900FA3E6E /* DbHandle.php */,
+			);
+			path = PHP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,11 +592,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5206ADE22A27C0200FA3E6E /* Podfile in Resources */,
+				F5206B6122BE310900FA3E6E /* DbConnect.php in Resources */,
 				F5182102229EF0740084B8BE /* SeconScreenStoryboard.storyboard in Resources */,
+				F5206B6322BE361B00FA3E6E /* DbOperation.php in Resources */,
 				F51820AE229A93860084B8BE /* LaunchScreen.storyboard in Resources */,
 				F5206B5C22BA27E600FA3E6E /* database.sql in Resources */,
+				F5206B5F22BE30C500FA3E6E /* Config.php in Resources */,
 				F51820AB229A93860084B8BE /* Assets.xcassets in Resources */,
+				F5206B6822C1464C00FA3E6E /* Info.plist in Resources */,
+				F5206B6522BE366900FA3E6E /* DbHandle.php in Resources */,
 				F51820A6229A93830084B8BE /* Main.storyboard in Resources */,
+				F5206B6722BFFA3A00FA3E6E /* ServerSideFile.php in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
