@@ -30,8 +30,8 @@ class FirstScreenTableViewCell: RootTableViewCell {
     // MARK: Outlets
     
     
-    @IBOutlet weak var categoryLabel: UILabel!
-    @IBOutlet weak var categoryImage: UIImageView!
+    @IBOutlet weak var categoryLabel: UILabel?
+    @IBOutlet weak var categoryImage: UIImageView?
     
     // MARK: -
     // MARK: Init and Deinit
@@ -45,21 +45,27 @@ class FirstScreenTableViewCell: RootTableViewCell {
     // MARK: Methods
     
     override func updateConstraints() {
-        self.categoryImage.snp.makeConstraints{ (make) -> Void in
+        if self.categoryImage != nil {
+            self.categoryImage!.snp.makeConstraints{ (make) -> Void in
             make.height.equalToSuperview().offset(SpacingRules.heightImage)
-            make.centerX.equalToSuperview()
-            make.top.equalToSuperview().offset(SpacingRules.top)
+                make.centerX.equalToSuperview()
+                make.top.equalToSuperview().offset(SpacingRules.top)
+            }
         }
-        self.categoryLabel.snp.makeConstraints{ (make) -> Void in
+        if self.categoryLabel != nil {
+            self.categoryLabel!.snp.makeConstraints{ (make) -> Void in
             make.width.equalToSuperview().offset(SpacingRules.widthLable)
-            make.centerX.equalToSuperview()
+                make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().offset(SpacingRules.bottom)
+            }
         }
         super.updateConstraints()
     }
     
     func doStyleLabel(){
-        labelFirstScreen(categoryLabel)
+        if self.categoryLabel != nil {
+            labelFirstScreen(categoryLabel!)
+        }
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

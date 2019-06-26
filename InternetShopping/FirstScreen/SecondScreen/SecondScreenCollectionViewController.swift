@@ -52,11 +52,16 @@ class SecondScreenCollectionViewController: UICollectionViewController{//RootCol
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.reuseIdentifier, for: indexPath) as? SecondScreenCollectionViewCell {
-            cell.descriptionLabel.text = self.data.namesOfstrings[indexPath.item]
-            cell.priceLabel.text = self.data.pricesString[indexPath.item]
+            if let dl: UILabel = cell.descriptionLabel {
+                dl.text = self.data.namesOfstrings[indexPath.item]}
+            if let price: UILabel = cell.priceLabel {
+                price.text = self.data.pricesString[indexPath.item]
+            }
             let imageName = self.data.namesOfImages[indexPath.item]
             let image = openImage(imageName)
-            cell.itemImage.image = image
+            if let itemImage: UIImageView = cell.itemImage {
+                itemImage.image = image
+            }
             return cell
         }
         else {

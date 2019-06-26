@@ -50,10 +50,14 @@ class FirstScreenTableViewController: RootTableViewControler, FirstScreenTableVi
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: self.cellID, for: indexPath) as? FirstScreenTableViewCell {
-            cell.categoryLabel.text = data.namesOfstrings[indexPath.item]
+            if let catLab: UILabel = cell.categoryLabel {
+                catLab.text = data.namesOfstrings[indexPath.item]
+            }
             let imageName = self.data.namesOfImages[indexPath.item]
             let image = openImage(imageName)
-            cell.categoryImage.image = image
+            if let catImage: UIImageView = cell.categoryImage {
+                catImage.image = image
+            }
             cell.updateConstraints()
             return cell}
         else {

@@ -29,9 +29,9 @@ class SecondScreenCollectionViewCell: RootCollectionViewCell {
     // MARK: -
     // MARK: Outlets
     
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var itemImage: UIImageView!
+    @IBOutlet weak var priceLabel: UILabel?
+    @IBOutlet weak var descriptionLabel: UILabel?
+    @IBOutlet weak var itemImage: UIImageView?
     
     // MARK: -
     // MARK: Init and Deinit

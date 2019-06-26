@@ -294,18 +294,18 @@
 				F51820BC229AA97C0084B8BE /* LibMVC.h */,
 				F51820BD229AA97C0084B8BE /* Info.plist */,
 				F51820DE229AF8530084B8BE /* RootView */,
-				F51820CD229AAA330084B8BE /* Extentions */,
+				F51820CD229AAA330084B8BE /* Extensions */,
 				F51820D0229ACFD50084B8BE /* Functions */,
 			);
 			path = LibMVC;
 			sourceTree = "<group>";
 		};
-		F51820CD229AAA330084B8BE /* Extentions */ = {
+		F51820CD229AAA330084B8BE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				F51820CE229AAA4B0084B8BE /* Optionals.swift */,
 			);
-			path = Extentions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F51820D0229ACFD50084B8BE /* Functions */ = {
