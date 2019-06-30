@@ -46,10 +46,16 @@ class SecondScreenCollectionViewCell: RootCollectionViewCell {
     
     override func updateConstraints() {
         super.updateConstraints()
+        
     }
     
     func doStyleLabel(){
-        
+        if self.descriptionLabel != nil {
+                labelDescriptionSecondScreen(descriptionLabel!)
+        }
+        if self.priceLabel != nil {
+            labelDescriptionSecondScreen(priceLabel!)
+        }
     }
     
 }

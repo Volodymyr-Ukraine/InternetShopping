@@ -30,11 +30,16 @@ public class ReadSQLData: SecondScreenModelProtocol, SecondScreensTextFieldsProt
         self.jumpScreens = []
         self.namesOfImages = []
         self.pricesString = []
-        self.connectSQL3()
+        self.SQLData()
     }
     
-    private func connectSQL3() {
-        let url = NSURL(string: "http://testsql.zzz.com.ua/read_SQL.php")! as URL
+    // MARK: -
+    // MARK: Private functions
+    
+    // read prepared php file, non secured due to open http adress (so anyone may track site and php page) PHP sample are in Resources/PHP/ServerSideFile.php
+    private func connectSQLThroughtServerPHP() {
+       let url = NSURL(string: "http://testsql.rf.gd/readSecondScreen.php")! as URL
+        // let url = NSURL(string: "http://testsql.zzz.com.ua/read_SQL.php")! as URL
         // domen: rudy.zzz.com.ua
         // main ideas taken here: https://stackoverflow.com/questions/37400639/post-data-to-a-php-method-from-swift
         // and here: https://www.simplifiedios.net/xcode-json-example-retrieve-data-mysql/
@@ -62,9 +67,10 @@ public class ReadSQLData: SecondScreenModelProtocol, SecondScreensTextFieldsProt
             task.resume()
         
     }
-    
-    private func connectSQL2() {
-        let user = OHMySQLUser(userName: "RootUser", password: "Admin1", serverName: "mysql.zzz.com.ua", dbName: "testsql", port: 3306, socket: nil)
+    // Direct connection to SQL base on server side (need OHMySQL pod)
+    private func connectSQLDirectlyFromSite() {
+        let user = OHMySQLUser(userName: "epiz_24099615", password: "yGxnrEMQOB7Qyf5", serverName: "sql105.epizy.com", dbName: "epiz_24099615_MyDB", port: 3306, socket: nil)
+        //let user = OHMySQLUser(userName: "RootUser", password: "Admin1", serverName: "mysql.zzz.com.ua", dbName: "testsql", port: 3306, socket: nil)
         let coordinator = OHMySQLStoreCoordinator(user: user!)
         coordinator.encoding = .UTF8MB4
         coordinator.connect()
@@ -78,7 +84,8 @@ public class ReadSQLData: SecondScreenModelProtocol, SecondScreensTextFieldsProt
         coordinator.disconnect()
     }
     
-    private func connectSQL() {
+    // Usage SQLite
+    private func connectLocalSQL() {
         do{
             let db = try Connection("Documents/SwiftProjects/InternetShopping/database.sql", readonly: true)
             let sellInfoPosition = Table("SecondScreen")
@@ -89,6 +96,12 @@ public class ReadSQLData: SecondScreenModelProtocol, SecondScreensTextFieldsProt
             print("ups, there is no connection to SQL DB")
             return
         }
+    }
+    
+    // fill model data directly from code
+    private func SQLData () {
+        
+        
     }
         
 }

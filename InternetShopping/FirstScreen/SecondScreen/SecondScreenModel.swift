@@ -16,6 +16,7 @@ public protocol SecondScreenModelProtocol {
 }
 
 public class SecondScreenModel: SecondScreenModelProtocol {
+    
     // MARK: -
     // MARK: Enums
     
@@ -44,6 +45,8 @@ public class SecondScreenModel: SecondScreenModelProtocol {
         self.jumpScreens = sortData(input: .jumpTo)
         self.namesOfImages = sortData(input: .image)
         self.pricesString = sortData(input: .price)
+        // In the future:
+        // let sql = ReadSQLData()
     }
     
     // MARK: -

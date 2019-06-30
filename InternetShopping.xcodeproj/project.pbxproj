@@ -67,6 +67,9 @@
 		F5206B6522BE366900FA3E6E /* DbHandle.php in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6422BE366900FA3E6E /* DbHandle.php */; };
 		F5206B6722BFFA3A00FA3E6E /* ServerSideFile.php in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6622BFFA3A00FA3E6E /* ServerSideFile.php */; };
 		F5206B6822C1464C00FA3E6E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F51820AF229A93860084B8BE /* Info.plist */; };
+		F5206B6B22C3C01300FA3E6E /* SecondScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6A22C3C01300FA3E6E /* SecondScreenJSON.json */; };
+		F5206B6D22C3C17800FA3E6E /* DecoderJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B6C22C3C17800FA3E6E /* DecoderJSON.swift */; };
+		F5206B6F22C9408900FA3E6E /* ReadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B6E22C9408900FA3E6E /* ReadJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +184,9 @@
 		F5206B6222BE361B00FA3E6E /* DbOperation.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = DbOperation.php; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.php; };
 		F5206B6422BE366900FA3E6E /* DbHandle.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = DbHandle.php; sourceTree = "<group>"; };
 		F5206B6622BFFA3A00FA3E6E /* ServerSideFile.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = ServerSideFile.php; sourceTree = "<group>"; };
+		F5206B6A22C3C01300FA3E6E /* SecondScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SecondScreenJSON.json; sourceTree = "<group>"; };
+		F5206B6C22C3C17800FA3E6E /* DecoderJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderJSON.swift; sourceTree = "<group>"; };
+		F5206B6E22C9408900FA3E6E /* ReadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +322,7 @@
 				F51820D3229AD0000084B8BE /* Configure.swift */,
 				F5206B0D22A3BA0A00FA3E6E /* OpenImage.swift */,
 				F5206B5722B7BCE400FA3E6E /* ToString.swift */,
+				F5206B6C22C3C17800FA3E6E /* DecoderJSON.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -370,6 +377,7 @@
 				F5182101229EF0740084B8BE /* SeconScreenStoryboard.storyboard */,
 				F5206B0922A3B7C700FA3E6E /* SecondScreenModel.swift */,
 				F5206B0F22A6898300FA3E6E /* ReadSQLData.swift */,
+				F5206B6E22C9408900FA3E6E /* ReadJSON.swift */,
 				F5206B1122A856FC00FA3E6E /* CoreModelData.xcdatamodeld */,
 				F5206B0B22A3B80F00FA3E6E /* SecondScreenTextFields.swift */,
 			);
@@ -418,6 +426,7 @@
 		F5206B1422B58BB400FA3E6E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F5206B6922C3BFEA00FA3E6E /* JSON */,
 				F5206B5D22BE1FA000FA3E6E /* PHP */,
 				F51820AA229A93860084B8BE /* Assets.xcassets */,
 				F5206B1522B58C5900FA3E6E /* Strings.swift */,
@@ -435,6 +444,14 @@
 				F5206B6422BE366900FA3E6E /* DbHandle.php */,
 			);
 			path = PHP;
+			sourceTree = "<group>";
+		};
+		F5206B6922C3BFEA00FA3E6E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F5206B6A22C3C01300FA3E6E /* SecondScreenJSON.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,6 +619,7 @@
 				F5206B6822C1464C00FA3E6E /* Info.plist in Resources */,
 				F5206B6522BE366900FA3E6E /* DbHandle.php in Resources */,
 				F51820A6229A93830084B8BE /* Main.storyboard in Resources */,
+				F5206B6B22C3C01300FA3E6E /* SecondScreenJSON.json in Resources */,
 				F5206B6722BFFA3A00FA3E6E /* ServerSideFile.php in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -737,6 +755,7 @@
 				F5206B1622B58C5900FA3E6E /* Strings.swift in Sources */,
 				F51820A3229A93830084B8BE /* ViewController.swift in Sources */,
 				F51820F3229E7AE20084B8BE /* FirstScreenTableViewController.swift in Sources */,
+				F5206B6F22C9408900FA3E6E /* ReadJSON.swift in Sources */,
 				F5182100229EEDE40084B8BE /* SecondScreenCollectionViewController.swift in Sources */,
 				F51820F0229E7A990084B8BE /* RootTableView.swift in Sources */,
 				F51820FA229E84870084B8BE /* FirstScreenTableViewCell.swift in Sources */,
@@ -765,6 +784,7 @@
 				F51820DB229AF79E0084B8BE /* RootAssembly.swift in Sources */,
 				F51820CC229AA9CC0084B8BE /* RootViewController.swift in Sources */,
 				F51820FE229EEB4E0084B8BE /* RootCollectionViewController.swift in Sources */,
+				F5206B6D22C3C17800FA3E6E /* DecoderJSON.swift in Sources */,
 				F51820D9229AF10D0084B8BE /* ViewConvertible.swift in Sources */,
 				F5206B0E22A3BA0A00FA3E6E /* OpenImage.swift in Sources */,
 				F51820D6229AD0880084B8BE /* Setup.swift in Sources */,

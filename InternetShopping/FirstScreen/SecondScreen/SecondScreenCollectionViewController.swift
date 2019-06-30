@@ -17,15 +17,6 @@ class SecondScreenCollectionViewController: UICollectionViewController{//RootCol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let sql = ReadSQLData()
-        if sql.jumpScreens.count>1 {return}
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-      //  self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
     }
 
     /*
