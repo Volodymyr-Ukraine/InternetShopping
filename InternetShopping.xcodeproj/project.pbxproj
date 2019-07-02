@@ -66,10 +66,10 @@
 		F5206B6322BE361B00FA3E6E /* DbOperation.php in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6222BE361B00FA3E6E /* DbOperation.php */; };
 		F5206B6522BE366900FA3E6E /* DbHandle.php in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6422BE366900FA3E6E /* DbHandle.php */; };
 		F5206B6722BFFA3A00FA3E6E /* ServerSideFile.php in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6622BFFA3A00FA3E6E /* ServerSideFile.php */; };
-		F5206B6822C1464C00FA3E6E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F51820AF229A93860084B8BE /* Info.plist */; };
 		F5206B6B22C3C01300FA3E6E /* SecondScreenJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = F5206B6A22C3C01300FA3E6E /* SecondScreenJSON.json */; };
 		F5206B6D22C3C17800FA3E6E /* DecoderJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B6C22C3C17800FA3E6E /* DecoderJSON.swift */; };
 		F5206B6F22C9408900FA3E6E /* ReadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B6E22C9408900FA3E6E /* ReadJSON.swift */; };
+		F5206B7222CB823500FA3E6E /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B7122CB823500FA3E6E /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +187,7 @@
 		F5206B6A22C3C01300FA3E6E /* SecondScreenJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SecondScreenJSON.json; sourceTree = "<group>"; };
 		F5206B6C22C3C17800FA3E6E /* DecoderJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderJSON.swift; sourceTree = "<group>"; };
 		F5206B6E22C9408900FA3E6E /* ReadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJSON.swift; sourceTree = "<group>"; };
+		F5206B7122CB823500FA3E6E /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +282,7 @@
 				F5206ADD22A27C0100FA3E6E /* Podfile */,
 				F51820A0229A93830084B8BE /* AppDelegate.swift */,
 				F51820A2229A93830084B8BE /* ViewController.swift */,
+				F5206B7022CB820F00FA3E6E /* Coordinator */,
 				F51820FB229EE3670084B8BE /* SecondScreen */,
 				F51820F8229E84530084B8BE /* FirstScreen */,
 				F51820A4229A93830084B8BE /* Main.storyboard */,
@@ -454,6 +456,22 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		F5206B7022CB820F00FA3E6E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F5206B7122CB823500FA3E6E /* ApplicationCoordinator.swift */,
+				F5206B7322CB827700FA3E6E /* Protocol */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F5206B7322CB827700FA3E6E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -616,7 +634,6 @@
 				F5206B5C22BA27E600FA3E6E /* database.sql in Resources */,
 				F5206B5F22BE30C500FA3E6E /* Config.php in Resources */,
 				F51820AB229A93860084B8BE /* Assets.xcassets in Resources */,
-				F5206B6822C1464C00FA3E6E /* Info.plist in Resources */,
 				F5206B6522BE366900FA3E6E /* DbHandle.php in Resources */,
 				F51820A6229A93830084B8BE /* Main.storyboard in Resources */,
 				F5206B6B22C3C01300FA3E6E /* SecondScreenJSON.json in Resources */,
@@ -758,6 +775,7 @@
 				F5206B6F22C9408900FA3E6E /* ReadJSON.swift in Sources */,
 				F5182100229EEDE40084B8BE /* SecondScreenCollectionViewController.swift in Sources */,
 				F51820F0229E7A990084B8BE /* RootTableView.swift in Sources */,
+				F5206B7222CB823500FA3E6E /* ApplicationCoordinator.swift in Sources */,
 				F51820FA229E84870084B8BE /* FirstScreenTableViewCell.swift in Sources */,
 				F5206B0A22A3B7C700FA3E6E /* SecondScreenModel.swift in Sources */,
 				F5206B1022A6898300FA3E6E /* ReadSQLData.swift in Sources */,

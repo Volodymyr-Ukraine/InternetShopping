@@ -9,8 +9,18 @@
 import Foundation
 import LibMVC
 
-
+struct SecondScreenData: Codable{
+    public var name: String
+    public var price: Float
+    public var imageTitle: String
+    public var jumpTo: Int
+    public var type: String
+}
 
 class ReadJSON {
+    public var dataSecondScreen: [SecondScreenData] = []
     
+    public init (sources: String) {
+        
+    }
 }
