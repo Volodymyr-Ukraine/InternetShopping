@@ -47,7 +47,7 @@ public class SecondScreensTextFields: SecondScreensTextFieldsProtocol {
     }
 }
 
-public struct SecondScreensTextField {
+public struct SecondScreensTextField : Codable {
     public let name: String
     public let imageTitle: String
     public let price: Float

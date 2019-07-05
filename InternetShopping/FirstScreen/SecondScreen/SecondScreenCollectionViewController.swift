@@ -36,7 +36,6 @@ class SecondScreenCollectionViewController: UICollectionViewController{//RootCol
         return 1
     }
 
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.data.namesOfstrings.count
     }

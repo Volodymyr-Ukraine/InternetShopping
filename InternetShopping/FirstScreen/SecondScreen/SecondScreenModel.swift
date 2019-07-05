@@ -35,12 +35,14 @@ public class SecondScreenModel: SecondScreenModelProtocol {
     public var jumpScreens: [String] = []
     public var namesOfImages: [String] = []
     public var pricesString: [String] = []
-    
+    private var json = ReadJSON(sources: "SecondScreenJSON")
     // MARK: -
     // MARK: Init and Deinit
     
     public init() {
         self.data = SecondScreensTextFields()
+
+        self.data.fieldsArray = json.dataSecondScreen
         self.namesOfstrings = sortData(input: .name)
         self.jumpScreens = sortData(input: .jumpTo)
         self.namesOfImages = sortData(input: .image)

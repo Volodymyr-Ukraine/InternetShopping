@@ -70,6 +70,7 @@
 		F5206B6D22C3C17800FA3E6E /* DecoderJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B6C22C3C17800FA3E6E /* DecoderJSON.swift */; };
 		F5206B6F22C9408900FA3E6E /* ReadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B6E22C9408900FA3E6E /* ReadJSON.swift */; };
 		F5206B7222CB823500FA3E6E /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B7122CB823500FA3E6E /* ApplicationCoordinator.swift */; };
+		F5206B7522CF346D00FA3E6E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5206B7422CF346D00FA3E6E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +189,7 @@
 		F5206B6C22C3C17800FA3E6E /* DecoderJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderJSON.swift; sourceTree = "<group>"; };
 		F5206B6E22C9408900FA3E6E /* ReadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJSON.swift; sourceTree = "<group>"; };
 		F5206B7122CB823500FA3E6E /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		F5206B7422CF346D00FA3E6E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +284,7 @@
 				F5206ADD22A27C0100FA3E6E /* Podfile */,
 				F51820A0229A93830084B8BE /* AppDelegate.swift */,
 				F51820A2229A93830084B8BE /* ViewController.swift */,
+				F5206B7422CF346D00FA3E6E /* Extensions.swift */,
 				F5206B7022CB820F00FA3E6E /* Coordinator */,
 				F51820FB229EE3670084B8BE /* SecondScreen */,
 				F51820F8229E84530084B8BE /* FirstScreen */,
@@ -774,6 +777,7 @@
 				F51820F3229E7AE20084B8BE /* FirstScreenTableViewController.swift in Sources */,
 				F5206B6F22C9408900FA3E6E /* ReadJSON.swift in Sources */,
 				F5182100229EEDE40084B8BE /* SecondScreenCollectionViewController.swift in Sources */,
+				F5206B7522CF346D00FA3E6E /* Extensions.swift in Sources */,
 				F51820F0229E7A990084B8BE /* RootTableView.swift in Sources */,
 				F5206B7222CB823500FA3E6E /* ApplicationCoordinator.swift in Sources */,
 				F51820FA229E84870084B8BE /* FirstScreenTableViewCell.swift in Sources */,
