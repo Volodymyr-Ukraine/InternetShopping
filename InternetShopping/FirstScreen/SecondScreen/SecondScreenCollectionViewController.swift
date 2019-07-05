@@ -10,7 +10,7 @@ import UIKit
 import LibMVC
 
 
-class SecondScreenCollectionViewController: UICollectionViewController{//RootCollectionViewController {
+class SecondScreenCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{//RootCollectionViewController {
     let reuseIdentifier = "CollectionCell"
     var data = SecondScreenModel()
     private var cellID = "ItemCell"
@@ -58,6 +58,26 @@ class SecondScreenCollectionViewController: UICollectionViewController{//RootCol
             return UICollectionViewCell()
         }
     }
+    
+    // MARK: Correction of cell sizes
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellSize = CGSize(width: (collectionView.bounds.width - (3 * 10))/2, height: (collectionView.bounds.height - (3*10))/4)
+        return cellSize
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
+    {
+        let sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        return sectionInset
+    }
+  
 
     // MARK: UICollectionViewDelegate
 
